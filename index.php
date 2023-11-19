@@ -49,30 +49,8 @@ $conn->close();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VideoLearner</title>
-    <style>
-        /* Estilo para o botão Excluir */
-        .delete-button,button {
-            background-color: #007BFF;
-            color: #fff;
-            border: none;
-            padding: 8px 12px;
-            cursor: pointer;
-            font-size: 14px;
-        }
-        .youtube{
-            color: red;
-        }
-        h1{
-         text-align: center;
-        }
-        .formularioInicial {
-           margin-left: 25%;
-        }
-        body{
-            background-color: lightgray;
-        }
-       
-    </style>
+    <link rel="stylesheet" href="style.css">
+    
 </head>
 <body>
     <h1>A sua Playlist de Aulas do <span class="youtube">YouTube</span>  </h1>
