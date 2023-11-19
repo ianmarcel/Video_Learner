@@ -51,7 +51,7 @@ $conn->close();
     <title>VideoLearner</title>
     <style>
         /* Estilo para o botão Excluir */
-        .delete-button {
+        .delete-button,button {
             background-color: #007BFF;
             color: #fff;
             border: none;
@@ -59,16 +59,26 @@ $conn->close();
             cursor: pointer;
             font-size: 14px;
         }
+        .youtube{
+            color: red;
+        }
         h1{
          text-align: center;
         }
+        .formularioInicial {
+           margin-left: 25%;
+        }
+        body{
+            background-color: lightgray;
+        }
+       
     </style>
 </head>
 <body>
-    <h1>A sua Playlist de Aulas do YouTube</h1>
+    <h1>A sua Playlist de Aulas do <span class="youtube">YouTube</span>  </h1>
 
     <!-- Formulário para inserção de novas aulas -->
-    <form method="post" action="">
+    <form class="formularioInicial" method="post" action="">
         <label for="nome">Nome da Aula:</label>
         <input type="text" name="nome" required>
 
@@ -87,7 +97,7 @@ $conn->close();
         $counter = 0;
         while ($row = $result->fetch_assoc()) {
             echo "<div style='flex: 0 0 50%; box-sizing: border-box; padding: 10px;'>";
-            echo "<h3>{$row['nome']}</h3>";
+            echo "<h3>{$row['nome']} <input type='checkbox' class='assistido-checkbox'> Ja assisti</h3>";
             echo "<iframe width='100%' height='300' src='{$row['link_aula']}' frameborder='0' allowfullscreen></iframe>";
 
             // Botão de exclusão estilizado
