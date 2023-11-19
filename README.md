@@ -8,6 +8,7 @@ Licença : este codigo é uma versão inicial
 Instruçao de Uso :
 <br>
 1- Crie sua database , pode ser no phpmyadmin
+2- Crie sua tabela , obs :caso queira outro nome que nao começe com tb. nao é necessario as `` ex : `tb.aulas` vira so aulas(se sua tabela for chamada aulas) 
 <br>
 2 - Ative o seu servidor , pode ser o apache que o xampp utiliza
 
