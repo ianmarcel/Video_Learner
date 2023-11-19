@@ -8,9 +8,16 @@ Licença : este codigo é uma versão inicial
 Instruçao de Uso :
 <br>
 1- Crie sua database , pode ser no phpmyadmin
-2- Crie sua tabela , obs :caso queira outro nome que nao começe com tb. nao é necessario as `` ex : `tb.aulas` vira so aulas(se sua tabela for chamada aulas) 
 <br>
-2 - Ative o seu servidor , pode ser o apache que o xampp utiliza
+2- Crie sua tabela 
+<br>
+obs :caso queira outro nome que nao começe com tb. nao é necessario as `` 
+<br>
+ex : `tb.aulas` vira so aulas(se sua tabela for chamada aulas) 
+<br>
+3 - Ative o seu servidor , pode ser o apache que o xampp utiliza
+<br>
+4- Acesse localhost/nomedoSeuProjeto 
 
 ![Texto Alternativo](https://github.com/ianmarcel/Video_Learner/blob/ac0f3358234a9071c147d8bc4e893db8025cc389/Captura%20de%20tela%202023-11-18%20214957.png)
 
