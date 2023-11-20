@@ -1,5 +1,3 @@
-<!-- form.php -->
-
 <form class="formularioInicial" method="post" action="">
     <label for="nome">Nome da Aula:</label>
     <input type="text" name="nome" required>

@@ -1,5 +1,6 @@
-
 <?php
+$result = $conn->query("SELECT id, nome, link_aula FROM `tb.aulas`");
+
 if ($result->num_rows > 0) {
     echo "<div style='display: flex; flex-wrap: wrap;'>";
     $counter = 0;
@@ -9,10 +10,7 @@ if ($result->num_rows > 0) {
         echo "<iframe width='100%' height='300' src='{$row['link_aula']}' frameborder='0' allowfullscreen></iframe>";
 
         // Botão de exclusão estilizado
-        echo "<form method='post' action=''>";
-        echo "<input type='hidden' name='delete_id' value='{$row['id']}'>";
-        echo "<button type='submit' class='delete-button'>Excluir</button>";
-        echo "</form>";
+        include 'delete-button.php';
 
         echo "</div>";
 
@@ -26,4 +24,5 @@ if ($result->num_rows > 0) {
 } else {
     echo "Nenhuma aula cadastrada.";
 }
+$conn->close();
 ?>

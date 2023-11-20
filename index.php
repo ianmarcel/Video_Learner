@@ -14,22 +14,28 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['delete_id'])) {
 }
 
 // Verifica se o formulário foi submetido para adição
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
+if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['nome']) && isset($_POST['link_aula'])) {
     // Dados do formulário
     $nome = $_POST['nome'];
     $link_aula = $_POST['link_aula'];
 
     // Inserção no banco de dados
-    $sql = "INSERT INTO `tb.aulas` (nome, link_aula) VALUES ('$nome', '$link_aula')";
-    $conn->query($sql);
+    $sql = "INSERT INTO `tb.aulas` (nome, link_aula) VALUES (?, ?)";
+    $stmt = $conn->prepare($sql);
+    $stmt->bind_param("ss", $nome, $link_aula);
+    $stmt->execute();
+    $stmt->close();
 }
 
 // Seleciona todos os registros da tabela
 $result = $conn->query("SELECT id, nome, link_aula FROM `tb.aulas`");
 
 // Fecha a conexão
-$conn->close();
+// $conn->close();
 ?>
+
+<!-- Restante do HTML permanece inalterado -->
+
 
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -38,18 +44,13 @@ $conn->close();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VideoLearner</title>
     <link rel="stylesheet" href="style.css">
-    
 </head>
 <body>
-    <h1>A sua Playlist de Aulas do <span class="youtube">YouTube</span>  </h1>
+    <h1>A sua Playlist de Aulas do <span class="youtube">YouTube</span></h1>
 
-    
     <!-- Formulário para inserção de novas aulas -->
     <?php include 'form.php'; ?>
 
-    <hr>
-
-   
     <hr>
 
     <!-- Exibe todas as aulas cadastradas -->
