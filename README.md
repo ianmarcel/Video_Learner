@@ -2,7 +2,8 @@
 Sua Playlist de Aulas 
 <br>
 <br>
-Licença : este codigo é uma versão inicial 
+**Versão 1.0.0 (Versão Inicial)**
+Este é o lançamento inicial do projeto.E está em desenvolvimento ativo para melhorias futuras.
 <br>
 <br>
 Instruçao de Uso :
@@ -21,6 +22,6 @@ ex : `tb.aulas` vira so aulas(se sua tabela for chamada aulas)
 <br>
 5- Acesse localhost/nomedoSeuProjeto 
 
-![Texto Alternativo](https://github.com/ianmarcel/Video_Learner/blob/ac0f3358234a9071c147d8bc4e893db8025cc389/Captura%20de%20tela%202023-11-18%20214957.png)
+![Texto Alternativo](https://github.com/ianmarcel/Video_Learner/blob/1f11b19f1e177d373e0d58055c57c3b22a95d128/Capa.png)
 
 
