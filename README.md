@@ -21,6 +21,7 @@ ex : `tb.aulas` vira so aulas(se sua tabela for chamada aulas)
 4 - Ative o seu servidor , pode ser o apache que o xampp utiliza
 <br>
 5- Acesse localhost/nomedoSeuProjeto 
+<br>
 6-Dica : para inserir o video do yt clique em compartilhar Dps incorporar e pegue o link que esta dentro de src (sem as aspas)
 
 ![Texto Alternativo](https://github.com/ianmarcel/Video_Learner/blob/1f11b19f1e177d373e0d58055c57c3b22a95d128/Capa.png)
