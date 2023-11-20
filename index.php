@@ -34,8 +34,6 @@ $result = $conn->query("SELECT id, nome, link_aula FROM `tb.aulas`");
 // $conn->close();
 ?>
 
-<!-- Restante do HTML permanece inalterado -->
-
 
 <!DOCTYPE html>
 <html lang="pt-br">
